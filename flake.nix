@@ -1,6 +1,10 @@
 {
   description = "A global cursor theme";
 
+  nixConfig = {
+    flake-registry = https://github.com/calbrecht/f4s-registry/raw/main/flake-registry.json;
+  };
+
   outputs = inputs: {
 
     overlay = final: prev: {
