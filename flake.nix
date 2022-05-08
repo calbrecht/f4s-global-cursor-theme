@@ -5,10 +5,6 @@
     flake-registry = https://github.com/calbrecht/f4s-registry/raw/main/flake-registry.json;
   };
 
-  inputs = {
-    nixpkgs.url = flake:f4s-nixpkgs;
-  };
-
   outputs = inputs: {
 
     overlay = final: prev: {
